@@ -1,39 +1,5 @@
 <!Doctype html>
 <html land="en">
-<!-- <script type="module" src="public/scripting.js"></script> -->
-<script>
-    console.log("si funciona")
-    class MyHeader extends HTMLElement {
-    connectedCalllback(){
-        this.innerHTML = `
-        <div class="header">
-            <h1>Isra's page</h1>
-            <p>A static web site to know more</p> 
-        </div> 
-
-        <div class="navbar">
-            <a href="#">Power BI</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href class="right">Link</a>
-        </div>
-        `
-        }
-    }
-
-    class MyFooter extends HTMLElement {
-        connectedCalllback(){
-            this.innerHTML = `
-            <div class="footer">
-                <h2>Footer</h2>
-            </div>
-            `
-        }
-    }
-
-    customElements.define('my-header', MyHeader)
-    customElements.define('my-footer', MyFooter)
-</script>
 
     <head>
         <link rel="stylesheet", type="text/css", href="public/style.css", media="screen"/>
@@ -49,7 +15,6 @@
     
 
     <body>
-        <my-header></my-header>
     
         <div class="header">
             <h1>Isra's page</h1>
@@ -67,7 +32,9 @@
             <div class="side">...</div>
             <div class="main">...</div>
         </div>
-        <my-footer></my-footer>
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
 
     </body>
 </html>
